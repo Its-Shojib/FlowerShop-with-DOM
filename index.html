@@ -18,7 +18,7 @@
     </header>
     <main>
         <section class="max-w-screen-xl mx-auto p-4 my-10 md:px-8 lg:px-16">
-            <div class="flex flex-col md:flex-row">
+            <div class="flex flex-col md:flex-row gap-5">
                 <!-- card -->
                 <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                     <!-- card-1 -->
@@ -67,20 +67,23 @@
                 </div>
 
                 <!-- output -->
-                <div class="w-[300px]">
+                <div class="">
                     <h1 class="text-center text-3xl underline">Cart Box</h1>
                     <div id="container" class="pl-10 pt-5 h-64 overflow-y-auto"></div>
                     <div>
-                        <h1 class="text-3xl text-center font-bold">Total Price: <span id="totalPrice">00</span> $</h1>
+                        <h1 class="text-3xl text-center font-bold">Total Price: <span id="totalPrice" class="text-red-600">00</span> $</h1>
+                    </div>
+                    <div class="mx-auto w-full mt-5">
+                        <button onclick="removeElement()" class="bg-green-600 text-white py-3 text-center rounded-xl w-full">Buy Now</button>
                     </div>
                 </div>
             </div>
         </section>
 
     </main>
-    <!-- <footer class="text-center bg-black text-white p-5 mt-5 lg:mt-[115px]">
+    <footer class="text-center bg-black text-white p-5 mt-5 lg:mt-[67px]">
         All Rights Reserved by @Md Shojib Hossain || 2023
-    </footer> -->
+    </footer>
     <script src="./js/script.js"></script>
 </body>
 
