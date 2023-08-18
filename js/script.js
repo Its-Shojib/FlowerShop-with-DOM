@@ -17,4 +17,7 @@ function btnClick(e){
     let totalPrice = parseFloat(totalString);
     let total = totalPrice + price;
     totalField.innerHTML = total;
+    // if(count >8){
+    //     alert("ALALLA");
+    // }
 }
