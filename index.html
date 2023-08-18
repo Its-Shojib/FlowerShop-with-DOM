@@ -18,26 +18,59 @@
     </header>
     <main>
         <section class="max-w-screen-xl mx-auto p-4 my-10 md:px-8 lg:px-16">
-            <div class="flex ">
+            <div class="flex flex-col md:flex-row">
                 <!-- card -->
-                <div>
-                    <div class="card w-96 bg-gray-500 text-white shadow-xl">
-                        <figure class="px-10 pt-10">
-                          <img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" class="rounded-xl" />
+                <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                    <!-- card-1 -->
+                    <div class="card bg-gray-500 text-white shadow-xl h-[450px]">
+                        <figure class="px-5 pt-5">
+                            <img class="w-full h-full" src="./Flower Asset/pngwing 7.png" alt="Flowers" class="rounded-xl" />
                         </figure>
                         <div class="card-body items-center text-center">
-                          <h2 class="card-title">Shoes!</h2>
-                          <p>If a dog chews shoes whose shoes does he choose?</p>
-                          <div class="card-actions">
-                            <button class="btn btn-primary">Buy Now</button>
-                          </div>
+                            <h2 class="card-title">Snow White</h2>
+                            <p>Flowers that connect you to your home and your home being beautifull.</p>
+                            <p>Price: 30 $</p>
+                            <div class="card-actions">
+                                <button onclick="btnClick(this)" class="btn btn-primary">Add to Cart</button>
+                            </div>
                         </div>
-                      </div>
+                    </div>
+                    <!-- card-2 -->
+                    <div class="card bg-gray-500 text-white shadow-xl h-[450px]">
+                        <figure class="px-5 pt-5">
+                            <img class="w-full h-full" src="./Flower Asset/pngwing 8.png" alt="Flowers" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title">Snow Black</h2>
+                            <p>Flowers that connect you to your home and your home being beautifull.</p>
+                            <p>Price: 50 $</p>
+                            <div class="card-actions">
+                                <button onclick="btnClick(this)" class="btn btn-primary">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card-3 -->
+                    <div class="card bg-gray-500 text-white shadow-xl h-[450px]">
+                        <figure class="px-5 pt-5">
+                            <img class="w-full h-full" src="./Flower Asset/pngwing 10.png" alt="Flowers" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title">Snow White</h2>
+                            <p>Flowers that connect you to your home and your home being beautifull.</p>
+                            <p>Price: 30 $</p>
+                            <div class="card-actions">
+                                <button onclick="btnClick(this)" class="btn btn-primary">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
 
                 <!-- output -->
-                <div></div>
+                <div class="w-[300px]">
+                    <h1 class="text-center text-3xl underline">Cart Box</h1>
+                    <div id="container"></div>
+                </div>
             </div>
         </section>
 
